@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Haunt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-image: url(Images/MainBG.jpg); background-size: cover;">
+    <div id="menu-screen">
+        <div id="menu-design"></div>
+
+        <h1 id="game-name">Space Haunt</h1>
+
+        <button id="play-button">Play</button>
+        <button id="reset-data-button">Reset data</button>
+    </div>
+
+    <div id="game-world"></div>
+
+    <script type="module" src="Modules/random_number.js"></script>
+    <script type="module" src="Modules/distance.js"></script>
+    <script type="module" src="Modules/collision.js"></script>
+
+    <script type="module" src="Modules/world_generation.js"></script>
+    <script type="module" src="Modules/player.js"></script>
+    <script type="module" src="Modules/menu.js"></script>
+    <script type="module" src="main.js"></script>
+</body>
+</html>

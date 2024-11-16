@@ -1,6 +1,6 @@
 import { distance, getPositionFromStyle, getSizeFromStyle } from "./distance.js"
 import { isIntersection } from "./collision.js"
-import { getGeneratedRooms } from "./world_generation.js"
+import { getGeneratedRooms, checkRooms } from "./world_generation.js"
 import { play } from "./menu.js"
 
 const gameWorld = document.querySelector("#game-world")
@@ -192,6 +192,7 @@ function loop(){
     
     updatePlayer()
     updateCamera(moveX, moveY, rooms)
+    checkRooms([currentPlayer.x, currentPlayer.y])
 
     lastLoopCycleTime = currentLoopCycle
 }

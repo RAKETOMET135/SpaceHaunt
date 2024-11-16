@@ -153,6 +153,7 @@ body{
     height: 100px;
     background-color: red;
     position: absolute;
+    z-index: 135;
 }
 
 #game-world{
